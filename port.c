@@ -171,6 +171,8 @@ n405:
 n410:
     t = 43000 - 30000*rnd(0)+(rnd(0)*10)*0.987654 + 102;
     if (t < 10000) goto n410;
+    s = 0;
+    p2 = 0;
     t = (int)t;
     if(!strcmp (z, "U-BOAT")) goto n2030;
     printf("YOUR INSTRUMENTS READ THE RANGE TO THE TARGET AS %i", t);
