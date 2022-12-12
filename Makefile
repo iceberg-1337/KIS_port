@@ -5,7 +5,7 @@ MyProject : port.c
 	gcc -c port.c -o port.o
 installemsdk: 
 	cd .. && git clone https://github.com/emscripten-core/emsdk.git
-	cd ../emsdk && emsdk install latest && emsdk activate latest && emsdk_env.bat && emcc RabbitChase.c -s WASM=1 -o pge.html
+	cd ../emsdk && emsdk install latest && emsdk activate latest && emsdk_env.bat && emcc port.c -s WASM=1 -o pge.html
 	npm i http-server -g
 runserver:
 	  cd ../emrun pge.html
