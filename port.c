@@ -102,7 +102,7 @@ int main(){
     printf("YOU COMMAND A FLEET OF SHIPS OPERATING IN\n");
     printf("ENEMY TERRITORY!!!\n");
     printf("DO YOU NEED ANY ASSISTANCE\n");
-    char *q;
+    char q[5];
     int s1 = 0;
     int s = 0;
     int p2 = 0;
@@ -301,9 +301,9 @@ n1370:
     goto n820;
 
 n1410:
-    printf("WHERE DID U LEARN TO TYPE? %i", b);
+    printf("WHERE DID U LEARN TO TYPE? %f", b);
     printf(" DEGREES EXCEEDS 360 BY\n");
-    printf("%i", b-360);
+    printf("%f", b-360);
     printf(" DEGREES\n");
     s1 += 1;
     if (p==1) goto n1590;
